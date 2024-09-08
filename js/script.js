@@ -1,14 +1,11 @@
-// 当页面加载时显示欢迎信息
-window.onload = function() {
-    alert("欢迎来到酸雨观测业务页面！");
-};
+function showContent(section) {
+    // 隐藏所有的内容块
+    document.getElementById('home').style.display = 'none';
+    document.getElementById('acidRain').style.display = 'none';
+    document.getElementById('highAltitude').style.display = 'none';
+    document.getElementById('monitoring').style.display = 'none';
+    document.getElementById('contactUs').style.display = 'none';
 
-// 点击按钮显示更多内容
-function showMore() {
-    var moreContent = document.getElementById("moreContent");
-    if (moreContent.style.display === "none") {
-        moreContent.style.display = "block";
-    } else {
-        moreContent.style.display = "none";
-    }
+    // 显示被点击的内容块
+    document.getElementById(section).style.display = 'block';
 }
