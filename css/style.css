@@ -7,41 +7,88 @@ body {
 
 .header {
     background-color: #333;
-    padding: 10px 0;
+    padding: 10px;
     text-align: center;
+    color: white;
 }
 
-.menu {
+.top-menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.menu li {
-    display: inline-block;
-    margin-right: 20px;
+.top-menu li {
+    margin: 0 20px;
 }
 
-.menu li a {
-    text-decoration: none;
+.top-menu li a {
     color: white;
+    text-decoration: none;
     font-size: 18px;
-    padding: 10px 20px;
-    background-color: #333;
-    transition: background-color 0.3s;
 }
 
-.menu li a:hover {
-    background-color: #555;
+.top-menu li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar ul li a:hover {
+    color: #007bff;
 }
 
 .content {
+    flex-grow: 1;
     padding: 20px;
-    font-size: 16px;
-    color: #333;
-    border-top: 1px solid #ddd;
-    text-align: center;
-    min-height: 300px;
+}
+
+.acidRainContent {
+    display: flex;
+}
+
+.leftSection {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.leftSection ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.leftSection ul li {
+    margin-bottom: 10px;
+}
+
+.rightSection {
+    width: 75%;
 }
 
 #content div {

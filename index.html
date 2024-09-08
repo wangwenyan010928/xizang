@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- 顶部导航栏 -->
     <div class="header">
-        <ul class="menu">
+        <ul class="top-menu">
             <li><a href="#" onclick="showContent('home')">首页</a></li>
             <li><a href="#" onclick="showContent('acidRain')">酸雨</a></li>
             <li><a href="#" onclick="showContent('highAltitude')">高空</a></li>
@@ -16,13 +17,43 @@
             <li><a href="#" onclick="showContent('contactUs')">联系我们</a></li>
         </ul>
     </div>
-    <div class="content">
-        <div id="home">这是首页的内容。</div>
-        <div id="acidRain" style="display:none;">这是酸雨的内容。</div>
-        <div id="highAltitude" style="display:none;">这是高空的内容。</div>
-        <div id="monitoring" style="display:none;">这是测报的内容。</div>
-        <div id="contactUs" style="display:none;">这是联系我们的内容。</div>
+
+    <div class="container">
+        <!-- 左侧垂直导航栏 -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">现代科学</a></li>
+                <li><a href="#">业务流程</a></li>
+                <li><a href="#">法律法规</a></li>
+            </ul>
+        </div>
+
+        <!-- 右侧内容区域 -->
+        <div class="content" id="content">
+            <div id="home">这是首页的内容。</div>
+            <div id="acidRain" style="display:none;">
+                <h2>酸雨专题</h2>
+                <div class="acidRainContent">
+                    <div class="leftSection">
+                        <ul>
+                            <li>现代科学</li>
+                            <li>业务流程</li>
+                            <li>法律法规</li>
+                        </ul>
+                    </div>
+                    <div class="rightSection">
+                        <h3>酸雨相关报告</h3>
+                        <p>这里展示酸雨的报告信息以及相关文档。</p>
+                        <p>更多详细内容可参考其他文档。</p>
+                    </div>
+                </div>
+            </div>
+            <div id="highAltitude" style="display:none;">这是高空的内容。</div>
+            <div id="monitoring" style="display:none;">这是测报的内容。</div>
+            <div id="contactUs" style="display:none;">这是联系我们的内容。</div>
+        </div>
     </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
