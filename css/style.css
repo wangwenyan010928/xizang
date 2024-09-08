@@ -1,0 +1,64 @@
+/* 全局样式 */
+body {
+    font-family: 'SimHei', Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* 顶部横幅 */
+header {
+    background-image: url('images/banner.jpg'); /* 你可以替换为你的横幅图像 */
+    background-size: cover;
+    height: 200px;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    font-size: 36px;
+}
+
+/* 导航栏样式 */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+/* 主内容区域 */
+.container {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* 图片样式 */
+img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
