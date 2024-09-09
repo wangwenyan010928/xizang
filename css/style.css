@@ -3,11 +3,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f9f9f9;
 }
 
 .header {
     background-color: #333;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     color: white;
 }
@@ -36,51 +37,44 @@ body {
 
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 100vh;
 }
 
 .sidebar {
-    width: 200px;
-    background-color: #f4f4f4;
-    padding: 20px;
     display: none; /* 默认情况下，首页不显示侧边栏 */
 }
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin: 10px 0;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.sidebar ul li a:hover {
-    color: #007bff;
-}
-
 .content {
-    flex-grow: 1;
-    padding: 20px;
+    width: 80%;
+    text-align: center;
 }
 
 .image-container {
     text-align: center;
+    margin: 20px 0;
 }
 
 .company-image {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px; /* 限制图片最大宽度，使其适应页面 */
     height: auto;
+    border: 2px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .company-description {
-    margin-top: 20px;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.6;
     text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .acidRainContent {
