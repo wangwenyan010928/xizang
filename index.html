@@ -20,34 +20,36 @@
 
     <div class="container">
         <!-- 左侧垂直导航栏 -->
-        <div class="sidebar">
-            <ul>
-                <li><a href="#">现代科学</a></li>
-                <li><a href="#">业务流程</a></li>
-                <li><a href="#">法律法规</a></li>
-            </ul>
+        <div class="sidebar" id="sidebar">
+            <!-- 默认不显示侧边栏 -->
         </div>
 
         <!-- 右侧内容区域 -->
         <div class="content" id="content">
-            <div id="home">这是首页的内容。</div>
+            <!-- 首页内容 -->
+            <div id="home">
+                <h2>公司介绍</h2>
+                <div class="image-container">
+                    <img src="company-image.jpg" alt="公司图片" class="company-image">
+                </div>
+                <div class="company-description">
+                    <p>我们公司是一家致力于创新科技的企业，拥有多年行业经验，专注于为客户提供优质的解决方案。</p>
+                </div>
+            </div>
+            <!-- 酸雨内容 -->
             <div id="acidRain" style="display:none;">
                 <h2>酸雨专题</h2>
                 <div class="acidRainContent">
-                    <div class="leftSection">
-                        <ul>
-                            <li>现代科学</li>
-                            <li>业务流程</li>
-                            <li>法律法规</li>
-                        </ul>
+                    <div class="leftSection" id="acidRainMenu">
+                        <!-- 酸雨专题的左侧菜单将通过JS动态生成 -->
                     </div>
                     <div class="rightSection">
                         <h3>酸雨相关报告</h3>
                         <p>这里展示酸雨的报告信息以及相关文档。</p>
-                        <p>更多详细内容可参考其他文档。</p>
                     </div>
                 </div>
             </div>
+            <!-- 其他内容 -->
             <div id="highAltitude" style="display:none;">这是高空的内容。</div>
             <div id="monitoring" style="display:none;">这是测报的内容。</div>
             <div id="contactUs" style="display:none;">这是联系我们的内容。</div>

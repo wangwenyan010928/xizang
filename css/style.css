@@ -42,6 +42,7 @@ body {
     width: 200px;
     background-color: #f4f4f4;
     padding: 20px;
+    display: none; /* 默认情况下，首页不显示侧边栏 */
 }
 
 .sidebar ul {
@@ -67,6 +68,21 @@ body {
     padding: 20px;
 }
 
+.image-container {
+    text-align: center;
+}
+
+.company-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.company-description {
+    margin-top: 20px;
+    text-align: center;
+}
+
 .acidRainContent {
     display: flex;
 }
@@ -78,15 +94,6 @@ body {
     margin-right: 20px;
 }
 
-.leftSection ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.leftSection ul li {
-    margin-bottom: 10px;
-}
-
 .rightSection {
     width: 75%;
 }
@@ -96,5 +103,5 @@ body {
 }
 
 #content div:first-child {
-    display: block;
+    display: block; /* 默认显示首页 */
 }
